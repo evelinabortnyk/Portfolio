@@ -6,19 +6,7 @@ function Header() {
   const [classListBtn, setClassListBtn] = useState("menu-btn")
   const [classListMenu, setClassListMenu] = useState("burger-menu")
 
-
-  // menuBtn.addEventListener('click', (e)=>{
-  //   e.preventDefault;
-  //   if(menuBtn.classList.value == 'menu-btn menu-btn-active'){
-  //       menuBtn.classList.remove('menu-btn-active')
-  //       menuBurger.classList.remove('burger-menu-active')
-
-  //   }else{
-  //       menuBtn.classList.add('menu-btn-active')
-  //       menuBurger.classList.add('burger-menu-active')
-  //   }
-  // })
-
+  const naviArr = ['About me', 'My scills', "Portfolio", 'Contacts']
   function menuClick() {
     setMenuActive(!menuActive)
 
@@ -30,24 +18,30 @@ function Header() {
       setClassListMenu('burger-menu')
     }
   }
+
   return (
     <>
       <header className='header'>
-        <div className="header-logo">Evelina Bortnyk</div>
+        <div className="header-logo"></div>
         <a href="#" className={`menu-btn ${classListBtn}`} value={menuActive} onClick={() => menuClick()}>
-            <span className="menu-btn-burger"></span>
+          <span className="menu-btn-burger"></span>
         </a>
       </header>
       <div className="menu">
-          <nav className={`burger-menu ${classListMenu}`}>
-            <ul className="menu-list">
-              <li><a href="#">Home</a></li>
-              <li><a href="#projects">Projects</a></li>
-              <li><a href="#contacts">Contacts</a></li>
-            </ul>
-          </nav>
-        </div>
+        <nav className={`burger-menu ${classListMenu}`}>
+          <ul className="menu-list">
+            {naviArr.map((item, index) => (
+              <li key={index}><a href={`#${item}`}>{item}</a></li>
+            ))}
+          </ul>
+        </nav>
+      </div>
+      <div className='header-background'>
+        <h1>Evelina Bortnyk</h1>
+        <p></p>
+      </div>
     </>
+
   )
 }
 
