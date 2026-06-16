@@ -1,0 +1,167 @@
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    position: relative;
+    z-index:2;
+    background-color: rgb(111, 15, 15);
+}
+
+.header-logo {
+    height: 100%;
+    width: 120px;
+    display: flex;
+    align-items: center;
+    margin:  0 20px;
+    text-align: center;
+    color: #fff;
+    /* background-image: url('../../public/favicon.svg'); */
+}
+
+/* Burger menu */
+
+button {
+    border: none;
+    cursor: pointer;
+}
+
+li {
+    list-style: none;
+}
+
+
+.menu {
+    padding: 15px;
+    position: absolute;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.menu-btn {
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    right: 20px;
+    top: 5px;
+    position: absolute;
+}
+
+.menu-btn span,
+.menu-btn span:before,
+.menu-btn span:after {
+    position: absolute;
+    top: 50%;
+    margin-top: -1.5px;
+    left: 50%;
+    margin-left: -10px;
+    width: 20px;
+    height: 3px;
+    background: #fff;
+    transition: 0.3s;
+}
+
+.menu-btn span:before,
+.menu-btn span:after {
+    content: '';
+}
+
+.menu-btn span:before {
+    transform: translateY(-5px);
+}
+
+.menu-btn-active span {
+    height: 0;
+}
+
+.menu-btn span:after {
+    transform: translateY(5px);
+}
+
+.menu-btn-active span:before {
+    transform: rotate(45deg);
+}
+
+.menu-btn-active span:after {
+    transform: rotate(-45deg);
+}
+
+.burger-menu {
+    position: absolute;
+    background-color: rgba(26, 26, 26, 0.2);
+    width: 100%;
+    left: 0;
+    padding: 20px 0;
+    top: -300px;
+    transition: all 0.3s;
+}
+
+.burger-menu-active {
+    top: 0;
+}
+
+.menu-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+}
+
+.menu-list>li {
+    padding: 10px 0;
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 2px -1px 22px rgba(1, 1, 1, 0.92);
+}
+
+.menu-list>li:hover {
+    border-bottom: 1px solid #fff;
+}
+
+@media (min-width: 768px) {
+    
+}
+@media (min-width: 1024px) {
+    .header{
+        z-index: 0;
+    }
+    .menu-btn{
+        display: none;
+    }
+    .menu{
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        top: -60px;
+        height: 60px;
+        width: 100%;
+        padding-right: 10px;
+    }
+    .burger-menu {
+        position: relative;
+        top: 0px;
+        padding: 0;
+        background-color: rgba(26, 26, 26, 0);
+    }
+    .menu-list{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+    }
+    .menu-list>li{
+        margin: 0 10px;
+    }
+}
+@media (min-width: 1440px) {
+    
+}
