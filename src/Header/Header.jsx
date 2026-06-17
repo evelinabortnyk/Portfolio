@@ -38,7 +38,8 @@ function Header() {
       </div>
       <div className='header-background'>
         <h1>Evelina Bortnyk</h1>
-        <p></p>
+        <p>Front end developer</p>
+        <a href='./Lebenslauf.pdf' download><button className='header-btn'>Download the CV</button></a>
       </div>
     </>
 
