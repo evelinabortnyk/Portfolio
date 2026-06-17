@@ -39,7 +39,7 @@ function Header() {
       <div className='header-background'>
         <h1>Evelina Bortnyk</h1>
         <p>Front end developer</p>
-        <a href='./Lebenslauf.pdf' download><button className='header-btn'>Download the CV</button></a>
+        <a href='./Lebenslauf.pdf' download><button className='header-btn'>download the CV</button></a>
       </div>
     </>
 
