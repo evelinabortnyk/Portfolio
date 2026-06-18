@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "http://evelinabortnyk.github.io/portfolio",
+  "homepage": "https://evelinabortnyk.github.io/Portfolio_2026",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
