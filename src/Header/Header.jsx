@@ -20,7 +20,7 @@ function Header() {
   }
 
   return (
-    <>
+    <header>
       <header className='header'>
         <div className="header-logo"></div>
         <a href="#" className={`menu-btn ${classListBtn}`} value={menuActive} onClick={() => menuClick()}>
@@ -41,7 +41,7 @@ function Header() {
         <p>Front end developer</p>
         <a href='./Lebenslauf.pdf' download><button className='header-btn'>download the CV</button></a>
       </div>
-    </>
+    </header>
 
   )
 }

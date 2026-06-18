@@ -1,0 +1,13 @@
+.main-conteiner{
+    height: 100vh;
+    padding: 5vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main-conteiner > p{
+    text-align: center;
+    padding-top: 20px;
+}

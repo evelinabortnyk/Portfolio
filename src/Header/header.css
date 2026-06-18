@@ -1,4 +1,7 @@
+header{
+    color: #fff;
 
+}
 .header {
     display: flex;
     flex-direction: row;
