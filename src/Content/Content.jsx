@@ -1,7 +1,8 @@
 import './content.css'
+import Projects from './Projects/Projects'
 
 function Content () {
-
+    const scillsArr= ['HTML', 'CSS', 'Java Script', 'React', 'TypeScript', 'Vue', 'Node', 'AJAX', 'Git']
     return (
         <>
         <main>
@@ -14,6 +15,15 @@ function Content () {
                     When I'm not coding, I enjoy sports, reading, and exploring new ideas in technology.
                 </p>
             </div>
+            <div className='main-conteiner'>
+                <h2>My scills</h2>
+                <div className='main-grid'>
+                    {scillsArr.map((item, index)=> (
+                        <div className='grid-element scill' key={index}>{item}</div>
+                    ))}
+                </div>
+            </div>
+            <Projects />          
         </main>
             
         </>
