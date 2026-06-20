@@ -1,11 +1,13 @@
 import './footer.css'
-
+import mailIcon from './img/envelope.svg'
+import linkedinIcon from './img/linkedin.svg'
+import githubIcon from './img/github.svg'
 
 function Footer (){
     const contactsArr = [
-        {'src': '/Portfolio_2026/src/Footer/img/envelope.svg', 'link': 'mailto:bortnykevelinaa@gmail.com', 'type': 'Email',},
-        {'src': '/Portfolio_2026/src/Footer/img/linkedin.svg', 'link': 'https://www.linkedin.com/in/evelina-bortnyk-81bb83416/', 'type': 'Linkedin',},
-        {'src': '/Portfolio_2026/src/Footer/img/github.svg', 'link': 'https://github.com/evelinabortnyk', 'type': 'GitHub',},
+        {'src': mailIcon, 'link': 'mailto:bortnykevelinaa@gmail.com', 'type': 'Email',},
+        {'src': linkedinIcon, 'link': 'https://www.linkedin.com/in/evelina-bortnyk-81bb83416/', 'type': 'Linkedin',},
+        {'src': githubIcon, 'link': 'https://github.com/evelinabortnyk', 'type': 'GitHub',},
     ]
     return (
 
