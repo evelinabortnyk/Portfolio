@@ -220,4 +220,8 @@ li {
     .header-background{
         top: -160px
     }
+    header button:hover{
+        -webkit-box-shadow: 0px 0px 12px 5px  var(--beige); 
+        box-shadow: 0px 0px 12px 5px var(--beige);
+    }
 }

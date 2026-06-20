@@ -2,7 +2,7 @@
     flex-direction: column;
     justify-content: space-between;
     flex: 1 1 100%;
-
+    
     width: 100%;
     min-height: 400px;
     border: 1px solid var(--bordo);
@@ -38,7 +38,9 @@
     background-color: var(--beige);
     color: var(--bordo);
 }
-
+.project-links button:hover {
+    border: 2px solid var(--bordo);
+}
 
 @media (min-width: 768px) {
     .project{
@@ -52,3 +54,5 @@
         max-width: calc(33.333% - 24px);
     }
 }
+
+
