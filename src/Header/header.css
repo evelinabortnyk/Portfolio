@@ -2,6 +2,10 @@ header{
     color: #fff;
     height: 100vh;
 }
+h1{
+    text-align: center;
+    margin-top: 125px;
+}
 .header {
     display: flex;
     flex-direction: row;
@@ -9,12 +13,13 @@ header{
     align-items: center;
     height: 80px;
     position: relative;
-    z-index: 2;
+    z-index: 3;
 }
 
 .header-logo {
     height: 100%;
     width: 200px;
+    max-width: calc(100% - 90px);
     display: flex;
     align-items: center;
     margin: 0 20px;
@@ -110,7 +115,8 @@ a {
 }
 
 .burger-menu-active {
-    top: 0;
+    top: -80px;
+    padding-top: 80px;
 }
 
 .menu-list {
@@ -146,6 +152,15 @@ a {
 }
 .header-background * {
     text-shadow: 0px 0px 15px #000;
+}
+
+
+
+
+@media (min-width: 768px) {
+    .burger-menu-active {
+        padding-top: 20px;
+    }
 }
 
 @media (min-width: 1024px) {
