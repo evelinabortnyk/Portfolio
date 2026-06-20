@@ -5,6 +5,11 @@
   box-sizing: border-box;
 }
 
+:root {
+  --bordo: rgb(94, 6, 6);
+  --beige: rgb(254, 253, 223);
+}
+
 html {
   font-size: 16px;
 }
@@ -12,12 +17,11 @@ html {
 body {
   font-size: 1rem;      /* 16px */
   line-height: 1.6;
-  background-color: rgb(94, 6, 6);
-  color: #fff;
+  color: var(--beige);
 }
 a {
   text-decoration: none;
-  color: #fff;
+  color: var(--beige);
 }
 
 img{
@@ -26,21 +30,21 @@ img{
   object-position: center;
 }
 
-h1, h2{
-  text-shadow: 0px 0px 15px #000;
-}
 
 h1 {
   font-size: clamp(2.5rem, 5vw, 4rem); /* 40–64px */
+  text-shadow: 0px 0px 15px #000;
+
 }
 
 h2 {
-  font-size: clamp(2rem, 4vw, 3rem);   /* 32–48px */
-  position: relative;
   display: block;
+  position: relative;
   min-width: 20%;
-  text-align: center;
   padding-bottom: 20px;
+
+  font-size: clamp(2rem, 4vw, 3rem);   /* 32–48px */
+  text-align: center;
 }
 
 h2::before{
@@ -49,20 +53,22 @@ h2::before{
   bottom: -10px;
   left: 50%;
   transform: translateX(-50%);
-  background-color: rgb(94, 6, 6);
+  background-color: var(--beige);
   font-size: 40px;
   z-index: 2;
 }
 
 h2::after{
   content: "";
-  position: relative;
   display: block;
-  height: 1px;
-  background-color: #fff;
-  margin-top: 20px;
+  position: relative;
   width: 140%;
+  height: 1px;
   left: -20%;
+  margin-top: 20px;
+
+  background-color: var(--bordo);
+  
 }
 
 h3 {
@@ -70,19 +76,20 @@ h3 {
 }
 
 button {
-  margin-top: 20px;
   width: 200px;
   height: 50px;
-  background-color: rgb(111, 15, 15);
+  margin-top: 20px;
+
+  background-color: var(--bordo);
   border-radius: 25px;
-  color: #fff;
+  color: var(--beige);
   text-transform: uppercase;
   transition: box-shadow 0.3s ease 0s;
 }
 
 @media (min-width: 1024px) {
   button:hover{
-    -webkit-box-shadow: 0px 0px 12px 5px  #fff; 
-    box-shadow: 0px 0px 12px 5px #fff;
+    -webkit-box-shadow: 0px 0px 12px 5px  var(--beige); 
+    box-shadow: 0px 0px 12px 5px var(--beige);
   }
 }
