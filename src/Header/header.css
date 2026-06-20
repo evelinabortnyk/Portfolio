@@ -20,7 +20,7 @@ header{
     margin: 0 20px;
     text-align: center;
     color: #fff;
-    background-image: url(/Porfolio/src/Header/img/logo.png?t=1781636601029);
+    background-image: url(./img/logo.png);
     background-size: 275px;
     background-position: top -87px right -36px;
     border: none
