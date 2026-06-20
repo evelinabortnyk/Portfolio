@@ -36,14 +36,13 @@ h2 {
   padding-bottom: 20px;
 }
 h2::before{
-  content: '⯆';
+  content: '▾';
   position: absolute;
-  bottom: 0px;
+  bottom: -10px;
   left: 50%;
   transform: translateX(-50%);
   background-color: rgb(94, 6, 6);
-  padding: 0 10px;
-  font-size: 30px;
+  font-size: 40px;
   z-index: 2;
 }
 h2::after{
