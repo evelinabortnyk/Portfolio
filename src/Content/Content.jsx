@@ -1,6 +1,5 @@
 import './content.css'
 import Projects from './Projects/Projects'
-import Slider from '../Slider/Slider'
 
 function Content () {
     const scillsArr= ['HTML', 'CSS', 'Java Script', 'React', 'TypeScript', 'Vue', 'Node', 'AJAX', 'Git']
@@ -24,7 +23,6 @@ function Content () {
                     ))}
                 </div>
             </div>
-            {/* <Slider /> */}
             <Projects />          
         </main>
             
