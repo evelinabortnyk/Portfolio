@@ -32,6 +32,15 @@ export const projectsArr =[
         'schow': false,
     },
     {
+<<<<<<< HEAD
+        img: fest,
+        title: 'Festival',
+        description: 'The project was created on Vue',
+        using: [],
+        linkShow :'https://fest-hczh8rlov-evelinavegas.vercel.app/',
+        linkCode :'https://github.com/evelinabortnyk/Rock_fest',
+    }, 
+=======
         'img': fest,
         'title': 'Festival',
         'description': 'The project was created on Vue',
@@ -48,4 +57,5 @@ export const projectsArr =[
     //     linkShow :'https://w-rter-app.vercel.app/',
     //     linkCode :'https://github.com/evelinavegas/w-rter-app/tree/main',
     // },        
+>>>>>>> 3061f86620d3b06e91a5f18e34a26979dfb550cb
 ]
