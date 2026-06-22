@@ -7,6 +7,8 @@ function Header() {
   const [classListMenu, setClassListMenu] = useState("burger-menu")
 
   const naviArr = ['About me', 'My scills', "Portfolio", 'Contacts']
+
+  const text = '< Front end developer />'
   function menuClick() {
     setMenuActive(!menuActive)
 
@@ -38,7 +40,7 @@ function Header() {
       </div>
       <div className='header-background'>
         <h1>Evelina Bortnyk</h1>
-        <p>Front end developer</p>
+        <p>{text}</p>
         <a href='./Lebenslauf.pdf' download><button className='header-btn'>download the CV</button></a>
       </div>
     </header>
