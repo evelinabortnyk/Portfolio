@@ -8,11 +8,10 @@ function Projects () {
             <h2>Portfolio</h2>
             <div className='main-grid projects'>
                 {projectsArr.map((item, index)=> (
-                    
                     <div key={index} className="grid-element project">
                         <div className="project-info">
-                            <img src={item.img}/>
-                            <div >
+                            <img className="project-info_img" src={item.img}/>
+                            <div className="project-info_content">
                                 <h3>{item.title}</h3>
                                 <p>{item.description}</p>
                             </div>
