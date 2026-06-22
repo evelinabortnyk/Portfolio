@@ -1,29 +1,60 @@
 header{
     color: #fff;
     height: 100vh;
+    max-height: 100vh;
+}
+h1{
+    text-align: center;
+    margin-top: 125px;
 }
 .header {
     display: flex;
+    position: relative;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+
     height: 80px;
-    position: relative;
-    z-index: 2;
+    padding: 0 2vh;
+    z-index: 3;
 }
 
 .header-logo {
-    height: 100%;
-    width: 200px;
     display: flex;
     align-items: center;
-    margin: 0 20px;
     text-align: center;
+
+    height: 100%;
+    width: 200px;
+    max-width: calc(100% - 90px);
+
     color: #fff;
-    background-image: url(/Porfolio/src/Header/img/logo.png?t=1781636601029);
+    background-image: url(./img/logo.png);
     background-size: 275px;
     background-position: top -87px right -36px;
     border: none
+}
+
+.header-background{
+    background-attachment: fixed;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    height: 100vh;
+    padding: 5vh;
+    top: -80px;
+
+    background-image: url(./img/background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+.header-background * {
+    text-shadow: 0px 0px 15px #000;
 }
 
 /* Burger menu */
@@ -37,7 +68,6 @@ li {
     list-style: none;
 }
 
-
 .menu {
     padding: 15px;
     position: absolute;
@@ -45,31 +75,28 @@ li {
     z-index: 2;
 }
 
-a {
-    text-decoration: none;
-    color: #fff;
-}
-
 .menu-btn {
     display: block;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    right: 20px;
-    top: 15px;
     position: absolute;
+
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    right: 2vh;
+    top: 30px;
 }
 
 .menu-btn span,
 .menu-btn span:before,
 .menu-btn span:after {
     position: absolute;
+    width: 20px;
+    height: 3px;
     top: 50%;
     margin-top: -1.5px;
     left: 50%;
     margin-left: -10px;
-    width: 20px;
-    height: 3px;
+    
     background: #fff;
     transition: 0.3s;
 }
@@ -101,16 +128,18 @@ a {
 
 .burger-menu {
     position: absolute;
-    background-color: rgba(26, 26, 26, 0.2);
     width: 100%;
     left: 0;
     padding: 20px 0;
     top: -300px;
+
+    background-color: rgba(26, 26, 26, 0.2);
     transition: all 0.3s;
 }
 
 .burger-menu-active {
-    top: 0;
+    top: -80px;
+    padding-top: 80px;
 }
 
 .menu-list {
@@ -121,8 +150,9 @@ a {
 }
 
 .menu-list>li {
-    padding: 10px 0;
     display: block;
+
+    padding: 10px 0;
     color: #fff;
     text-decoration: none;
     text-shadow: 2px -1px 22px rgba(1, 1, 1, 0.92);
@@ -130,22 +160,12 @@ a {
 
 }
 
-.header-background{
-    height: 100vh;
-    background-image: url(./img/background.jpg);
-    padding: 5vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size:cover;
-    position: relative;
-    top: -80px;
-}
-.header-background * {
-    text-shadow: 0px 0px 15px #000;
+
+
+@media (min-width: 768px) {
+    .burger-menu-active {
+        padding-top: 20px;
+    }
 }
 
 @media (min-width: 1024px) {
@@ -170,17 +190,17 @@ a {
         background-color: rgba(26, 26, 26, 0);
     }
     .menu-list{
-        width: 100%;
         display: flex;
         flex-direction: row;
         justify-content: end;
+        width: 100%;
     }
     .menu-list>li{
         margin: 0 20px;
     }
     .menu-list>li{
-        position: relative;
         display: block;
+        position: relative;
     }
 
     .menu-list>li::after{
@@ -199,5 +219,9 @@ a {
     }
     .header-background{
         top: -160px
+    }
+    header button:hover{
+        -webkit-box-shadow: 0px 0px 12px 5px  var(--beige); 
+        box-shadow: 0px 0px 12px 5px var(--beige);
     }
 }

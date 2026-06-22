@@ -21,12 +21,12 @@ function Header() {
 
   return (
     <header>
-      <header className='header'>
+      <div className='header'>
         <div className="header-logo"></div>
         <a href="#" className={`menu-btn ${classListBtn}`} value={menuActive} onClick={() => menuClick()}>
           <span className="menu-btn-burger"></span>
         </a>
-      </header>
+      </div>
       <div className="menu">
         <nav className={`burger-menu ${classListMenu}`}>
           <ul className="menu-list">
