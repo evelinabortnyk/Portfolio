@@ -28,7 +28,7 @@ footer >h2::before{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 10px;
+    padding: 10px 15px;
 }
 
 .footer-icon{
@@ -37,4 +37,10 @@ footer >h2::before{
 
     background-position: center;
     background-size: cover;
+}
+
+@media (hover: hover){
+    .footer-content > a:hover{
+        border-bottom: 1px solid wheat;
+    }
 }
