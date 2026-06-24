@@ -6,7 +6,7 @@ function Content () {
     return (
         <>
         <main>
-            <div className="main-conteiner">
+            <div className="main-conteiner" id='about-me'>
                 <h2>About me</h2>
                 <p>
                     Hi, I'm Evelina, a Frontend Developer passionate about creating modern, responsive, and user-friendly web applications.
@@ -15,7 +15,7 @@ function Content () {
                     When I'm not coding, I enjoy sports, reading, and exploring new ideas in technology.
                 </p>
             </div>
-            <div className='main-conteiner'>
+            <div className='main-conteiner' id='my-scills'>
                 <h2>My scills</h2>
                 <div className='main-grid'>
                     {scillsArr.map((item, index)=> (

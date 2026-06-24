@@ -6,7 +6,12 @@ function Header() {
   const [classListBtn, setClassListBtn] = useState("menu-btn")
   const [classListMenu, setClassListMenu] = useState("burger-menu")
 
-  const naviArr = ['About me', 'My scills', "Portfolio", 'Contacts']
+  const naviArr = [
+    {'value': 'About me', 'link' : 'about-me',},
+    {'value': 'My scills', 'link' : 'my-scills',},
+    {'value': 'Portfolio', 'link' : 'portfolio',},
+    {'value': 'Contacts', 'link' : 'contacts',},
+  ]
 
   const text = '< Front end developer />'
   function menuClick() {
@@ -33,7 +38,7 @@ function Header() {
         <nav className={`burger-menu ${classListMenu}`}>
           <ul className="menu-list">
             {naviArr.map((item, index) => (
-              <li key={index}><a href={`#${item}`}>{item}</a></li>
+              <li key={index} onClick={()=>{ document.getElementById(`${item.link}`)?.scrollIntoView({behavior: 'smooth'})}}><a href={`#${item.link}`}>{item.value}</a></li>
             ))}
           </ul>
         </nav>

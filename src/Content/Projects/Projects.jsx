@@ -4,7 +4,7 @@ import './projects.css'
 function Projects () {
     
     return (
-        <div className="main-conteiner">
+        <div className="main-conteiner"  id='portfolio'>
             <h2>Portfolio</h2>
             <div className='main-grid projects'>
                 {projectsArr.map((item, index)=> (
