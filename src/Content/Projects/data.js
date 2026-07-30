@@ -7,7 +7,7 @@ export const projectsArr =[
     {
         img: questsRoom,
         title: 'Quests room',
-        description: 'The project was created on React. Data was received from the server, filters were applied, a map with a marker and a form with validation were created.',
+        description: 'A full-stack web application built with React and a Node.js backend server. The frontend communicates with the API to retrieve and send data, provides filtering functionality, an interactive map with markers, and a validated booking form. The project demonstrates client-server interaction, API integration, and modern frontend development practices.',
         using: ['react-router-dom', 'leaflet', 'axios', 'formik', 'json-server', 'mobx'],
         linkShow :'https://escape-rooms-pink.vercel.app/',
         linkCode :'https://github.com/evelinabortnyk/escape_rooms',
@@ -17,8 +17,8 @@ export const projectsArr =[
         title: 'Convertor',
         description: 'The project was created on React. The program converts currency, saves previous conversions with the current date',
         using: ['react-router-dom', 'new Date'],
-        linkShow :'https://convertor-build.vercel.app/',
-        linkCode :'https://github.com/evelinabortnyk/Convertor/tree/main',
+        linkShow :'https://convertor-hazel.vercel.app/',
+        linkCode :'https://github.com/evelinabortnyk/convertor_26',
     },
     {        
         img: tattoo,
