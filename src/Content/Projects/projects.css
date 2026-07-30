@@ -9,6 +9,7 @@
 
     background-color: var(--bordo);
     color: var(--beige);
+    display: none;
 }
 
 .project-info_img {

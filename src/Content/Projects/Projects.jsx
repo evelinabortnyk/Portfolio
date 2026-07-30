@@ -6,6 +6,7 @@ function Projects () {
     return (
         <div className="main-conteiner"  id='portfolio'>
             <h2>Portfolio</h2>
+            <h3>In development from 30.07.2026...</h3>
             <div className='main-grid projects'>
                 {projectsArr.map((item, index)=> (
                     <div key={index} className="grid-element project">
