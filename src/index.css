@@ -8,6 +8,7 @@
 :root {
   --bordo: rgb(94, 6, 6);
   --beige: rgb(251, 251, 251);
+  --gray: #403e3e;
 }
 
 html {
