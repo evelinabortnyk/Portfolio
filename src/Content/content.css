@@ -2,10 +2,11 @@
 main{
     color: var(--bordo);
     background-color: var(--beige);
+    padding: 5vh;
 }
 .main-conteiner{
     min-height: 100vh;
-    padding: 5vh;
+    padding: 5vh 0;
 
     display: flex;
     flex-direction: column;
@@ -44,9 +45,19 @@ main{
 }
 
 @media (min-width: 768px) {
+    main{
+        padding: 0 15vh;
+    }
+
     .main-conteiner{
         min-height: auto;
-        padding: 10vh 5vh;
+        padding: 10vh 0;
     }
     
+}
+
+@media (min-width: 1024px) {
+    main{
+        /* padding: 0 20vh; */
+    }
 }
