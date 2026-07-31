@@ -12,18 +12,18 @@ function Projects() {
             <div className='projects'>
                 {projectsArr.map((project, index) => (
                     <div key={index} className="project">
-                        <div className="project--img">
+                        <div className="project--img" >
                             <img src={project.img} alt={project.title} />
                         </div>       
                         <div className="project--description">
                             <div className="project--info-wrap">
                                 <h3>{project.title}</h3>
-                                <p>{project.description}</p>
                                 <div className="info--tags">
                                     {project.tags.map((tag, tagIndex) => (
-                                        <p key={tagIndex}>#{tag} </p>
+                                        <div key={tagIndex} className="tag">{tag} </div>
                                     ))}
                                 </div>
+                                <p>{project.description}</p>
                             </div>
                             <div className="project--buttons-wrap">
                                 <a href={project.linkShow} className="project-links"><img src={gitIcon} alt="git-icon" /></a>
