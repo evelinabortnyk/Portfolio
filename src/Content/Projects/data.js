@@ -1,8 +1,8 @@
-import tattoo from './img/tattoo.jpg'
-import fest from './img/fest.jpg'
-import questsRoom from './img/quests-room.jpg'
-import convertor from './img/convertor.jpeg'
-import keksogram from './img/keksogram.jpg'
+import tattoo from './img/screen/tattoo_Salon-screen.png'
+import fest from './img/screen/fest-screen.png'
+import questsRoom from './img/screen/escapes-screen.png'
+import convertor from './img/screen/converter-screen.png'
+import keksogram from './img/screen/keksogram-screen.png'
 
 export const projectsArr =[
     {
