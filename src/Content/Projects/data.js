@@ -41,7 +41,7 @@ export const projectsArr =[
         img: fest,
         title: 'Festival',
         description: 'The project was created on Vue',
-        tags: [],
+        tags: ['Vue.js'],
         linkShow :'https://fest-hczh8rlov-evelinavegas.vercel.app/',
         linkCode :'https://github.com/evelinabortnyk/Rock_fest',
     }, 
