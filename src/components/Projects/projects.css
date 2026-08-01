@@ -12,7 +12,7 @@
 }
 
 .project > *{
-    padding: 0 20px;
+    padding: 10px 20px;
 }
 
 .project{
@@ -46,42 +46,29 @@
     border-radius: 10px 10px  0 0 ;
 }
 
-.project--description{
-    padding: 20px;
-}
-
-
 .info--tags{
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
-    height: 82px;
 
-    max-height: 82px;
+    max-height: 56px;
     overflow: hidden;
+}
+
+.info--features{
+    padding: 20px;
 }
 
 .tag{
     padding: 5px 10px;
+
     height: 36px;
     color: var(--bordo);
     background-color:#fff ;
     border-radius: calc(46px / 2);
 }
 
-.project--buttons-wrap{
-    display: flex;
-    padding-bottom: 20px;
-    margin-top: auto;
-    gap: 20px;
-}
 
-.project-links{
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    border: 1px solid #fff;
-}
 
 @media ( min-width: 768px) {
     .projects {
