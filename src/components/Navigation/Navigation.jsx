@@ -1,6 +1,8 @@
 import { useState } from 'react'
 
 import './navigation.css'
+import Logo from '../Header/img/logo.png'
+
 
 function Navigation() {
     const [menuActive, setMenuActive] = useState(false)
@@ -29,7 +31,9 @@ function Navigation() {
     return (
         <>
             <div className='header-navigation'>
-                <div className="header-logo"></div>
+            <div className='logo-container'>
+                <img src={Logo} alt="logo" className='logo'/>
+            </div>
                 <button href="#" className={`menu-btn ${classListBtn}`} value={menuActive} onClick={() => menuClick()}>
                     <span className="menu-btn-burger"></span>
                 </button>

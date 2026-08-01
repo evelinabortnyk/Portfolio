@@ -15,7 +15,7 @@ function Projects() {
             <h2>Portfolio</h2>
             <div className='projects'>
                 {projectsArr.map((project, index) => (
-                    <Link to={`${project.title}`} key={index} className="project">
+                    <Link to={`${project.link}`} key={index} className="project">
                         <div className="project--img" >
                             <img src={project.img} alt={project.title} />
                         </div>
@@ -32,9 +32,6 @@ function Projects() {
                         </div> */}
                     </Link>
                 ))}
-
-            </div>
-            <div className="project-preview">
 
             </div>
         </div>
