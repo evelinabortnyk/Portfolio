@@ -1,11 +1,10 @@
 import './content.css'
-import Projects from './Projects/Projects'
+import Projects from '../Projects/Projects'
 
 function Content () {
     const scillsArr= ['HTML', 'CSS', 'Java Script', 'React', 'TypeScript', 'Vue', 'Node', 'AJAX', 'Git']
     return (
-        <>
-        <main>
+        <div>
             <div className="main-conteiner" id='about-me'>
                 <h2>About me</h2>
                 <p>
@@ -24,9 +23,7 @@ function Content () {
                 </div>
             </div>
             <Projects />          
-        </main>
-            
-        </>
+        </div>    
     )
 }
 
