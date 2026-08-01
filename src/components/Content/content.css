@@ -1,22 +1,22 @@
-
 main{
     color: var(--bordo);
     background-color: var(--beige);
-    padding: 5vh;
 }
-.main-conteiner{
-    min-height: 100vh;
-    padding: 5vh 0;
 
+.main-conteiner{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 5vh;
+
 }
+
 .main-conteiner > p{
     text-align: center;
     padding-top: 20px;
 }
+
 .main-grid{
     display: flex;
     width: 100%;
@@ -26,6 +26,7 @@ main{
     gap: 20px;
     padding-top: 20px;
 }
+
 .grid-element{
     display: flex;
     justify-content: center;
@@ -45,13 +46,9 @@ main{
 }
 
 @media (min-width: 768px) {
-    main{
-        padding: 0 15vh;
-    }
-
     .main-conteiner{
         min-height: auto;
-        padding: 10vh 0;
+        padding: 10vh 15vh;
     }
     .scill:hover{
         transform: translateY(-8px);

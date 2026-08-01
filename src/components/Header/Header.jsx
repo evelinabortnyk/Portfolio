@@ -7,7 +7,7 @@ function Header() {
   
   return (
     <header>
-      <Navigation />
+      {/* <Navigation /> */}
       <div className='header-background'>
         <h1>Evelina Bortnyk</h1>
         <p>{text}</p>
