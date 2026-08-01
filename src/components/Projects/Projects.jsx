@@ -1,6 +1,9 @@
 import { projectsArr } from "./data.js"
 import { useState } from "react"
+import { Link } from "react-router-dom"
+
 import './projects.css'
+
 import gitIcon from './img/git.svg'
 import codeIcon from './img/code.svg'
 
@@ -12,7 +15,7 @@ function Projects() {
             <h2>Portfolio</h2>
             <div className='projects'>
                 {projectsArr.map((project, index) => (
-                    <div key={index} className="project">
+                    <Link to={`${project.title}`} key={index} className="project">
                         <div className="project--img" >
                             <img src={project.img} alt={project.title} />
                         </div>
@@ -27,7 +30,7 @@ function Projects() {
                             <a href={project.linkShow} className="project-links"><img src={gitIcon} alt="git-icon" /></a>
                             <a href={project.linkCode} className="project-links"><img src={codeIcon} alt="code-icon" /></a>
                         </div> */}
-                    </div>
+                    </Link>
                 ))}
 
             </div>
