@@ -7,11 +7,9 @@ function Layout () {
 
     return(
         <>
-            <Navigation />
             <main>
                 <Outlet />
             </main>
-            <Footer />
         </>
     )
 }
