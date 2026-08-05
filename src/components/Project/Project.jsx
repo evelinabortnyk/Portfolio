@@ -102,7 +102,11 @@ function Project() {
                     <p className="title">project gallery</p>
                     <div className='gallery'>
                         <img src={project.gallery[indexImg]} className={imgAnimation} alt={`photo ${indexImg}`} />
-
+                        <div className='gallery-circles'>
+                            {project.gallery.map((item, index)=> (
+                                <p key={index} className={indexImg === index ? 'circle circle-terget' : 'circle'}></p>
+                            ))}
+                        </div>
                         <div className='gallery-btn-wrap'>
                             <button className="gallery-btn" onClick={()=> goEnter()}><img src={ArrowIcon} alt="arrow icon" /></button>
                             <button className="gallery-btn btn-right" onClick={()=>goNext()}><img src={ArrowIcon} alt="arrow icon" /></button>
@@ -110,7 +114,7 @@ function Project() {
                     </div>
                     
                 </div>
-                <div className="project-block head--buttons-wrap">
+                <div className="project-block head--buttons-wrap buttons-wrap-footer">
                     <a href={project.linkShow} className="head-link">
                         <img src={gitIcon} alt="git-icon" />
                         <p>View Demo</p>
