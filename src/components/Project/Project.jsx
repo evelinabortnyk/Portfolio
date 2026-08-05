@@ -73,7 +73,7 @@ function Project() {
                     </div>
                 </div>
                 <div className='project-block block--img'>
-                    <img src={project.bg} alt="" />
+                    <img src={project.preview} alt="preview" />
                 </div>
                 <div className='project-block block--scills'>
                     <div className='technologies'>
