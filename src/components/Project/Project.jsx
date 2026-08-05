@@ -62,11 +62,11 @@ function Project() {
                     </div>
                     <p>{project.description}</p>
                     <div className="head--buttons-wrap">
-                        <a href={project.linkShow} className="head-link">
+                        <a href={project.linkShow} className="head-link" target='_blank'>
                             <img src={gitIcon} alt="git-icon" />
                             <p>View Demo</p>
                         </a>
-                        <a href={project.linkCode} className="head-link">
+                        <a href={project.linkCode} className="head-link" target='_blank'>
                             <img src={codeIcon} alt="code-icon" />
                             <p>View Code</p>
                         </a>
@@ -115,11 +115,11 @@ function Project() {
                     
                 </div>
                 <div className="project-block head--buttons-wrap buttons-wrap-footer">
-                    <a href={project.linkShow} className="head-link">
+                    <a href={project.linkShow} className="head-link" target='_blank'>
                         <img src={gitIcon} alt="git-icon" />
                         <p>View Demo</p>
                     </a>
-                    <a href={project.linkCode} className="head-link">
+                    <a href={project.linkCode} className="head-link" target='_blank'>
                         <img src={codeIcon} alt="code-icon" />
                         <p>View Code</p>
                     </a>
