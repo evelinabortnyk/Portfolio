@@ -67,8 +67,6 @@
     border-radius: calc(46px / 2);
 }
 
-
-
 @media ( min-width: 768px) {
     .projects {
         flex-direction: row;
