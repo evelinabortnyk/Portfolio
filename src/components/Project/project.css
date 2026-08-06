@@ -2,7 +2,7 @@
     position: relative;
     min-height: 100vh;
     background-color: var(--bordo);
-    padding: 100px 5vh 5vh 5vh;
+    padding: 100px 0 5vh 0;
 }
 
 .project-bg > *{
@@ -69,6 +69,13 @@
     width: 30px;
     height: 30px;
     margin-right: 10px;
+}
+.block--img{
+    overflow: hidden;
+}
+
+.block--img > img{
+    width: 112%;
 }
 
 .title{
@@ -204,6 +211,10 @@
 
 
 @media (min-width: 786px) {
+    .project-bg {
+       padding: 100px 5vh 5vh 5vh;
+    }   
+
     .head--buttons-wrap{
         flex-direction: row;
     }
@@ -225,12 +236,16 @@
     
     .block--img{
         display: block;
-        padding: 0;
+        padding: 0; 
     }
 
     .block--img, .row-galery{
         display: flex;
     
+    }
+
+    .block--scills, .block--gallery{
+        margin-top: 20px;
     }
 
     .buttons-wrap-footer{

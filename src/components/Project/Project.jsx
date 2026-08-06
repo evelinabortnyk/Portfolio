@@ -8,6 +8,7 @@ import codeIcon from './img/code.svg'
 import CheckGreenIcon from './img/check-green.svg'
 import ArrowIcon from './img/arrow.svg'
 import { useState } from 'react';
+import Footer from '../Footer/Footer'
 
 
 function Project() {
@@ -125,7 +126,7 @@ function Project() {
                     </a>
                 </div>
             </div>
-
+            <Footer />
         </div>
     )
 }
