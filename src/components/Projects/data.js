@@ -1,20 +1,20 @@
-import tattoo from './img/screen/tattoo_Salon-screen.png'
-import fest from './img/screen/fest-screen.png'
-import questsRoom from './img/screen/escapes-screen.png'
-import convertor from './img/screen/converter-screen.png'
-import keksogram from './img/screen/keksogram-screen.png'
+// import tattoo from './img/screen/tattoo_Salon-screen.png'
+// import fest from './img/screen/fest-screen.png'
+// import questsRoom from './img/screen/escapes-screen.png'
+// import convertor from './img/screen/converter-screen.png'
+// import keksogram from './img/screen/keksogram-screen.png'
 
-import tattooBg from './img/tattoo.jpg'
-import festBg from './img/fest.jpg'
-import questsRoomBg from './img/preview/escape-preview.png'
-import convertorBg from './img/converter.jpeg'
-import keksogramBg from './img/Keksogram.jpg'
+// import tattooBg from './img/tattoo.jpg'
+// import festBg from './img/fest.jpg'
+// import questsRoomBg from './img/preview/escape-preview.png'
+// import convertorBg from './img/converter.jpeg'
+// import keksogramBg from './img/Keksogram.jpg'
 
 export const projectsArr =[
     {
-        'img': questsRoom,
-        'preview': questsRoomBg,
-        'gallery' :['./gallery/escape_1.png', './gallery/escape_2.png', './gallery/escape_3.png', './gallery/escape_4.png'],
+        'img': './img/screen/escapes-screen.png',
+        'preview': './img/preview/escape-preview.png',
+        'gallery' :['./img/gallery/escape_1.png', './img/gallery/escape_2.png', './img/gallery/escape_3.png', './img/gallery/escape_4.png'],
         'title': 'Escape rooms',
         'link': 'escape-rooms',
         'description': 'A full-stack web application built with React and a Node.js backend server. The frontend communicates with the API to retrieve and send data, provides filtering functionality, an interactive map with markers, and a validated booking form. The project demonstrates client-server interaction, API integration, and modern frontend development practices.',
@@ -30,9 +30,9 @@ export const projectsArr =[
         'linkCode' :'https://github.com/evelinabortnyk/escape_rooms',
     },
     {
-        'img': convertor,
-        'preview': convertorBg,
-        'gallery' :['./gallery/converter_1.png', './gallery/converter_2.png',],
+        'img': './img/screen/converter-screen.png',
+        'preview': './img/preview/converter-preview.png',
+        'gallery' :['./img/gallery/converter_1.png', './img/gallery/converter_2.png',],
         'title': 'Converter',
         'link': 'converter',
         'description': 'A React-based currency converter that retrieves live exchange rates from the Frankfurter API. The application allows users to convert currencies, swap selected currencies instantly, and keep a history of previous conversions with the conversion date.',
@@ -49,9 +49,9 @@ export const projectsArr =[
         'linkCode':'https://github.com/evelinabortnyk/convertor_26',
     },
     {
-        'img': keksogram,
-        'preview': keksogramBg,
-        'gallery' :['./gallery/keksogram_1.png', './gallery/keksogram_2.png', './gallery/keksogram_3.png', './gallery/keksogram_4.png', ],
+        'img': './img/screen/keksogram-screen.png',
+        'preview': './img/preview/keksogram-preview.png',
+        'gallery' :['./img/gallery/keksogram_1.png', './img/gallery/keksogram_2.png', './img/gallery/keksogram_3.png', './img/gallery/keksogram_4.png', ],
         'title': 'Keksogram',
         'link': 'keksogram',
         'description': 'An image-sharing web application built with JavaScript and a custom backend server deployed on Render. The application allows users to upload and browse images, filter posts, and interact with a REST API through validated forms, demonstrating client-server communication and dynamic content management.',
@@ -69,9 +69,9 @@ export const projectsArr =[
         'linkCode':'https://github.com/evelinabortnyk/Keksogram-',
     },
     {        
-        'img': tattoo,
-        'preview': tattooBg,
-        'gallery' :['./gallery/tattoo_1.png', './gallery/tattoo_2.png', './gallery/tattoo_3.png', './gallery/tattoo_4.png'],
+        'img': './img/screen/tattoo_Salon-screen.png',
+        'preview': './img/preview/tattoo-preview.png',
+        'gallery' :['./img/gallery/tattoo_1.png', './img/gallery/tattoo_2.png', './img/gallery/tattoo_3.png', './img/gallery/tattoo_4.png'],
         'title': 'Tattoo salon',
         'link': 'tattoo-salon',
         'description': 'A responsive landing page for a tattoo studio built with JavaScript and jQuery. The project features an interactive image gallery, smooth scrolling, and a contact form, focusing on user experience and clean interface design.',
@@ -90,7 +90,7 @@ export const projectsArr =[
     // {
     //     'img': fest,
     //     'preview': festBg,
-    //     'gallery' :['./gallery/fest_1.png', './gallery/fest_2.png', './gallery/fest_3.png',],
+    //     'gallery' :['./img/gallery/fest_1.png', './img/gallery/fest_2.png', './img/gallery/fest_3.png',],
     //     'title': 'Festival',
     //     'link': 'festival',
     //     'description': 'The project was created on Vue',
