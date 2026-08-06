@@ -244,6 +244,10 @@
     
     }
 
+    .block--scills > div{
+        height: 50%;
+    }
+
     .block--scills, .block--gallery{
         margin-top: 20px;
     }
