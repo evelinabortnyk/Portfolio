@@ -10,6 +10,10 @@ footer{
     background-color: var(--bordo);
 }
 
+footer >h2{
+    color: var(--beige);
+}
+
 footer >h2::before {
     background-color: var(--bordo);
     color: var(--beige);
