@@ -7,7 +7,6 @@ import './projects.css'
 
 
 function Projects() {
-    const [preview, setPreview] = useState('none')
 
     return (
         <div className="main-conteiner" id='portfolio'>

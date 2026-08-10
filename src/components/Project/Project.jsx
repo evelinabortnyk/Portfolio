@@ -6,44 +6,14 @@ import CheckIcon from './img/check-icon.svg'
 import gitIcon from './img/git.svg'
 import codeIcon from './img/code.svg'
 import CheckGreenIcon from './img/check-green.svg'
-import ArrowIcon from './img/arrow.svg'
-import { useState } from 'react';
 import Footer from '../Footer/Footer'
+import Gallery from './gallery/Gallery';
 
 
 function Project() {
     const { link } = useParams();
-    const [indexImg, setIndexImg] = useState(0)
-
-    const [imgAnimation, setImgAnimation] = useState('')
-
 
     const project = projectsArr.find(project => project.link === link)
-
-    function goEnter() {
-        nextImage()
-        indexImg === 0 ? setIndexImg(project.gallery.length - 1) : setIndexImg(indexImg - 1)
-    }
-    function goNext() {
-        nextImage()
-        setTimeout(() => {
-            indexImg === project.gallery.length - 1 ? setIndexImg(0) : setIndexImg(indexImg + 1)
-        }, 350);
-    }
-
-    function nextImage() {
-        setImgAnimation('next');
-    
-        setTimeout(() => {
-            setImgAnimation('enter');
-    
-            requestAnimationFrame(() => {
-                requestAnimationFrame(() => {
-                    setImgAnimation("");
-                });
-            });
-        }, 350);
-    }
 
     return (
         <div className='project-bg' >
@@ -98,22 +68,9 @@ function Project() {
                     </div>
                     
                 </div>
-                <p></p>
                 <div className="project-block block--gallery">
                     <p className="title">project gallery</p>
-                    <div className='gallery'>
-                        <img src={project.gallery[indexImg]} className={imgAnimation} alt={`photo ${indexImg}`} />
-                        <div className='gallery-circles'>
-                            {project.gallery.map((item, index)=> (
-                                <p key={index} className={indexImg === index ? 'circle circle-terget' : 'circle'}></p>
-                            ))}
-                        </div>
-                        <div className='gallery-btn-wrap'>
-                            <button className="gallery-btn" onClick={()=> goEnter()}><img src={ArrowIcon} alt="arrow icon" /></button>
-                            <button className="gallery-btn btn-right" onClick={()=>goNext()}><img src={ArrowIcon} alt="arrow icon" /></button>
-                        </div>
-                    </div>
-                    
+                    < Gallery data={project.gallery.join(' ')}/>
                 </div>
                 <div className="project-block head--buttons-wrap buttons-wrap-footer">
                     <a href={project.linkShow} className="head-link" target='_blank'>

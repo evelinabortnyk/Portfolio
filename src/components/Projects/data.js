@@ -14,7 +14,7 @@ export const projectsArr =[
     {
         'img': './img/screen/escapes-screen.png',
         'preview': './img/preview/escape-preview.png',
-        'gallery' :['./img/gallery/escape_1.png', './img/gallery/escape_2.png', './img/gallery/escape_3.png', './img/gallery/escape_4.png'],
+        'gallery' : ['./img/gallery/escape_1.png', './img/gallery/escape_2.png', './img/gallery/escape_3.png', './img/gallery/escape_4.png'],
         'title': 'Escape rooms',
         'link': 'escape-rooms',
         'description': 'A full-stack web application built with React and a Node.js backend server. The frontend communicates with the API to retrieve and send data, provides filtering functionality, an interactive map with markers, and a validated booking form. The project demonstrates client-server interaction, API integration, and modern frontend development practices.',
