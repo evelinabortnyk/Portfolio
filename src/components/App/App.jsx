@@ -6,11 +6,8 @@ import Project from "../Project/Project";
 function App () {
     return (
         <Routes>
-            <Route path='/Portfolio' element={<Content />} />
-                {/* <Route index element={<Content />} /> */}
-                <Route path="/Portfolio/:link" element={<Project />} />
-                
-            {/* </Route> */}
+            <Route path='/' element={<Content />} />
+                <Route path="/:link" element={<Project />} />
         </Routes>
     )
 }
