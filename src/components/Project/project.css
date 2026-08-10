@@ -1,8 +1,8 @@
 .project-bg{
     position: relative;
     min-height: 100vh;
-    background-color: var(--bordo);
     padding: 100px 0 5vh 0;
+    background-color: var(--bordo);
 }
 
 .project-bg > *{
@@ -16,13 +16,29 @@
     left: 0;
 }
 
+.back-btn{
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    height: 80px;
+    padding: 0 20px;
+}
+
+.back-btn > img{
+    width: 30px;
+    height: 20px;
+    object-position: left;
+    margin-right: 10px;
+}
+
 .project-wrap{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     width: 100%;
     background-color: var(--bordo);
-
 }
 
 .project-block{
@@ -42,9 +58,9 @@
 .head--buttons-wrap{
     display: flex;
     flex-direction: column;
+    gap: 20px;
     padding-top: 20px ;
     margin-top: auto;
-    gap: 20px;
 }
 
 .head-link{
@@ -139,8 +155,6 @@
     aspect-ratio: 6 / 4;
 }
 
-
-
 .gallery{
     position: relative;
     display: flex;
@@ -169,13 +183,13 @@
 
 .gallery-circles{
     position: absolute;
+    left: 0;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 20px;
     width: 100%;
     bottom: 15px;
-    left: 0;
 }
 
 .circle{
@@ -189,30 +203,27 @@
 .circle-terget{
     background-color: var(--bordo);
 }
-/*  */
 
 .gallery-btn-wrap{
     position: absolute;
+    left: 0;
     display: flex;
     justify-content: space-between;
     width: 100%;
     padding: 10px;
     bottom: calc(50% - 25px);
-    left: 0;
 }
 
 .gallery-btn{
-    background-color: var(--beige);
     width: 25px;
     height: 25px;
+    background-color: var(--beige);
     color: var(--bordo);
 }
 
 .btn-right > img{
     transform: rotate(180deg);
 }
-
-
 
 @media (min-width: 786px) {
     .project-bg {
@@ -253,7 +264,6 @@
 
     .gallery {
         aspect-ratio: 6 / 4;
-
     }
 
     .buttons-wrap-footer{
