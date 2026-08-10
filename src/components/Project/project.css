@@ -134,6 +134,12 @@
 .block--img{
     display: none;
 }
+.block--gallery{
+    width: 100%;
+    aspect-ratio: 6 / 4;
+}
+
+
 
 .gallery{
     position: relative;
@@ -142,7 +148,7 @@
     overflow: hidden;
     border: 1px solid var(--bordo);
     border-radius: 10px;
-    aspect-ratio: 6/4;
+    height: 100%;
 }
 
 .gallery-img { 
@@ -238,17 +244,17 @@
         padding: 0; 
     }
 
-    .block--img, .row-galery{
-        display: flex;
-    
-    }
-
     .block--scills > div{
         height: 50%;
     }
 
     .block--scills, .block--gallery{
         margin-top: 20px;
+    }
+
+    .gallery {
+        aspect-ratio: 6 / 4;
+
     }
 
     .buttons-wrap-footer{
