@@ -1,7 +1,8 @@
 import './project.css'
-import { useParams } from 'react-router-dom'
+import { useParams, Link } from 'react-router-dom'
 import { projectsArr } from '../Projects/data';
 import Logo from '../Header/img/logo.png'
+import BackIcon from './img/back.svg'
 import CheckIcon from './img/check-icon.svg'
 import gitIcon from './img/git.svg'
 import codeIcon from './img/code.svg'
@@ -20,6 +21,10 @@ function Project() {
             <div className='logo-container'>
                 <img src={Logo} alt="logo" className='logo' />
             </div>
+            <Link to="/" className='back-btn'>
+                <img src={BackIcon} alt="back" />
+                <p>Back to portfolio</p>
+            </Link>
             <div className='project-wrap'>
                 <div className=' project-block block--head'>
                     <h3 className='head--name'>{project.title}</h3>
