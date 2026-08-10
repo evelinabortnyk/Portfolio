@@ -6,7 +6,6 @@ function Gallery(data) {
     const gallery = data.data.split(' ')
     const [indexImg, setIndexImg] = useState(0)
 
-
     function goEnter() {
         indexImg === 0 ? setIndexImg(gallery.length-1) : setIndexImg(indexImg -1)
     }
@@ -17,7 +16,7 @@ function Gallery(data) {
     return (
         <div className='gallery'>
             {gallery.map((item, index)=> (
-                <img key={index} src={item} className={indexImg === index ? 'gallery-img' : 'none'} alt="" />
+                <img key={index} src={item} className={`gallery-img ${indexImg === index ? 'gallery-img--target' : 'gallery-img--no-target'}`} alt="" />
             ))}
             <div className='gallery-circles'>
                 {gallery.map((item, index) => (
