@@ -21,7 +21,7 @@ function Gallery(data) {
             <div className='gallery-circles'>
                 <div className="circles-bg">
                     {gallery.map((item, index) => (
-                        <p key={index} className={indexImg === index ? 'circle circle-terget' : 'circle'}></p>
+                        <button key={index} onClick={()=> setIndexImg(index)} className={indexImg === index ? 'circle circle-terget' : 'circle'}></button>
                     ))}
                 </div>
             </div>
