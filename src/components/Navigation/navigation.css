@@ -128,6 +128,7 @@ li {
     text-decoration: none;
     text-shadow: 2px -1px 22px rgba(1, 1, 1, 0.92);
     transition: border 0.3s ease 0.3s;
+    cursor: pointer;
 }
 
 @media (min-width: 768px) {
