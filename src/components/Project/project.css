@@ -86,13 +86,7 @@
     height: 30px;
     margin-right: 10px;
 }
-.block--img{
-    overflow: hidden;
-}
 
-.block--img > img{
-    width: 112%;
-}
 
 .title{
     position: relative;
@@ -163,7 +157,8 @@
     overflow: hidden;
     border: 1px solid var(--bordo);
     border-radius: 10px;
-    height: 100%;
+    width: 100%;
+    aspect-ratio: 1440 / 900;
 }
 
 .gallery-img { 
@@ -254,6 +249,7 @@
 
     .project-block{
         flex: 1 1 45%;
+        padding: 100px 40px;
     }
 
     .project--buttons-wrap{
@@ -263,7 +259,12 @@
     .block--img{
         display: flex;
         padding: 0; 
-       justify-content: center;
+        justify-content: center;
+        overflow: hidden;
+    }
+    
+    .block--img > img{
+        width: 100%;
     }
 
     .block--scills > div{
@@ -275,14 +276,16 @@
     }
 
     .block--gallery {
-        aspect-ratio: 6 / 4;
+        width: 100%;
+        aspect-ratio: 1/1;
     }
 
     .buttons-wrap-footer{
         flex: none;
         width: 100%;
         max-width: 100%;
-        padding-right: 20px;
+        padding-bottom: 20px;
+        padding-top: 0;
         justify-content: space-around;
     }
 }
