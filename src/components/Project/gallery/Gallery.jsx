@@ -19,9 +19,11 @@ function Gallery(data) {
                 <img key={index} src={item} className={`gallery-img ${indexImg === index ? 'gallery-img--target' : 'gallery-img--no-target'}`} alt="" />
             ))}
             <div className='gallery-circles'>
-                {gallery.map((item, index) => (
-                    <p key={index} className={indexImg === index ? 'circle circle-terget' : 'circle'}></p>
-                ))}
+                <div className="circles-bg">
+                    {gallery.map((item, index) => (
+                        <button key={index} onClick={()=> setIndexImg(index)} className={indexImg === index ? 'circle circle-terget' : 'circle'}></button>
+                    ))}
+                </div>
             </div>
             <div className='gallery-btn-wrap'>
                 <button className="gallery-btn" onClick={() => goEnter()}><img src={ArrowIcon} alt="arrow icon" /></button>
