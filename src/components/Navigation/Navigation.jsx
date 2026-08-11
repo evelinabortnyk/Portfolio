@@ -28,6 +28,13 @@ function Navigation() {
         }
       }
 
+      function scrollToSection (id){
+        document.getElementById(id)?.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start',
+        });
+      };
+
     return (
         <>
             <div className='header-navigation'>
@@ -42,7 +49,7 @@ function Navigation() {
                 <nav className={`burger-menu ${classListMenu}`}>
                     <ul className="menu-list">
                         {naviArr.map((item, index) => (
-                            <li key={index} onClick={() => { document.getElementById(`${item.link}`)?.scrollIntoView({ behavior: 'smooth' }) }}><a href={`#${item.link}`}>{item.value}</a></li>
+                            <li key={index} onClick={() => scrollToSection(item.link)}>{item.value}</li>
                         ))}
                     </ul>
                 </nav>
