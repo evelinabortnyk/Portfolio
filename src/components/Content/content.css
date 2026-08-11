@@ -10,7 +10,6 @@ main{
     justify-content: center;
     align-items: center;
     padding: 5vh;
-
 }
 
 .main-conteiner > p{
@@ -20,11 +19,11 @@ main{
 
 .main-grid{
     display: flex;
-    width: 100%;
     justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 20px;
+    width: 100%;
     padding-top: 20px;
 }
 
@@ -36,12 +35,12 @@ main{
 .scill{
     width: 130px;
     height: 50px;
+    padding: 10px;
 
     background-color: var(--bordo);
     color: var(--beige);
     text-shadow: none;
 
-    padding: 10px;
     border: 1px solid var(--beige);
     border-radius: 25px;
 }
@@ -54,11 +53,5 @@ main{
     .scill:hover{
         transform: translateY(-8px);
         box-shadow: 0px 0px 10px var(--bordo);
-    }
-}
-
-@media (min-width: 1024px) {
-    main{
-        /* padding: 0 20vh; */
     }
 }

@@ -10,10 +10,8 @@ function Footer (){
         {'src': githubIcon, 'link': 'https://github.com/evelinabortnyk', 'type': 'GitHub',},
     ]
     return (
-
         <footer id='contacts'>
             <h2>Contacts</h2>
-            
             <div className='footer-content'>
                 {contactsArr.map((item, index) => (
                     <a key={index} href={item.link}><img src={item.src} className='footer-icon' alt="" />: {item.type}</a>

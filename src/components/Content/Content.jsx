@@ -7,9 +7,11 @@ import Navigation from '../Navigation/Navigation'
 function Content () {
     const scillsArr= ['HTML', 'CSS', 'Java Script', 'React', 'TypeScript', 'Vue', 'Node', 'AJAX', 'Git']
     return (
+        <>
+        <Navigation />
+        <Header />
         <main>
-            <Navigation />
-            <Header />
+            
             <div className="main-conteiner" id='about-me'>
                 <h2>About me</h2>
                 <p>
@@ -28,8 +30,9 @@ function Content () {
                 </div>
             </div>
             <Projects />    
-            <Footer />      
         </main>    
+        <Footer />   
+    </> 
     )
 }
 

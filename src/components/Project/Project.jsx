@@ -15,6 +15,7 @@ function Project() {
     const { link } = useParams();
 
     const project = projectsArr.find(project => project.link === link)
+    console.log(project)
 
     return (
         <div className='project-bg' >

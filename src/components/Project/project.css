@@ -150,6 +150,7 @@
 .block--img{
     display: none;
 }
+
 .block--gallery{
     width: 100%;
     aspect-ratio: 6 / 4;
@@ -262,7 +263,7 @@
         margin-top: 20px;
     }
 
-    .gallery {
+    .block--gallery {
         aspect-ratio: 6 / 4;
     }
 

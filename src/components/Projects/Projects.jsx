@@ -1,13 +1,9 @@
 import { projectsArr } from "./data.js"
-import { useState } from "react"
 import { Link } from "react-router-dom"
 
 import './projects.css'
 
-
-
 function Projects() {
-
     return (
         <div className="main-conteiner" id='portfolio'>
             <h2>Portfolio</h2>
@@ -27,11 +23,9 @@ function Projects() {
                             {project.features.map((feature, featureIndex) => (
                                 <div key={featureIndex} className="feature">{feature} </div>
                             ))}
-                        </div>
-                        
+                        </div>    
                     </Link>
                 ))}
-
             </div>
         </div>
     )
