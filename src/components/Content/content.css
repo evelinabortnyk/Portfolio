@@ -12,8 +12,17 @@ main{
     padding: 5vh;
 }
 
+.about-me{
+    min-height: 100vh;
+}
+
 .main-conteiner > p{
     text-align: center;
+}
+
+.main-conteiner > h4{
+    font-weight: 600;
+    font-size: 1rem;
     padding-top: 20px;
 }
 
