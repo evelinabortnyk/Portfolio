@@ -132,9 +132,7 @@ li {
 }
 
 @media (min-width: 768px) {
-    .burger-menu-active {
-        padding-top: 20px;
-    }
+    
 }
 
 @media (min-width: 1024px) {

@@ -1,3 +1,4 @@
+import Navigation from '../Navigation/Navigation'
 import './header.css'
 import Lebenslauf from '/Lebenslauf.pdf'
 
@@ -6,6 +7,7 @@ function Header() {
   
   return (
     <header>
+      <Navigation/>
       <div className='header-background'>
         <h1>Evelina Bortnyk</h1>
         <p>{text}</p>
