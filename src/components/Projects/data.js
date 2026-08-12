@@ -69,7 +69,7 @@ export const projectsArr =[
         'linkCode':'https://github.com/evelinabortnyk/Keksogram-',
     },
     {        
-        'img': './img/screen/tattoo_Salon-screen.png',
+        'img': './img/screen/tattoo-screen.png',
         'preview': './img/preview/tattoo-preview.png',
         'gallery' :['./img/gallery/tattoo_1.png', './img/gallery/tattoo_2.png', './img/gallery/tattoo_3.png', './img/gallery/tattoo_4.png'],
         'title': 'Tattoo salon',
