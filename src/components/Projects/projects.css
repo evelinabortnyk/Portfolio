@@ -1,3 +1,7 @@
+.portfolio{
+    padding: 0;
+}
+
 .projects {
     position: relative;
     display: flex;
@@ -7,7 +11,7 @@
     flex-wrap: nowrap;
     gap: 15px;
     width: 100%;
-    margin-top: 50px;
+    padding: 50px 10px;
 }
 
 .project > *{
@@ -18,14 +22,14 @@
     display: flex;
     flex-direction: column;
     justify-content: start;
-    width: 80%;
-    padding-bottom: 20px;
+    width: 100%;
     border: 1px solid var(--bordo);
     background-color: var(--bordo);
     color: #fff;
     border-radius: 10px;
     overflow: hidden;
     cursor: pointer;
+    aspect-ratio: 4/4;
 }
 
 
@@ -48,9 +52,10 @@
 .info--tags{
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
     gap: 10px;
 
-    max-height: 56px;
+    height: 56px;
     overflow: hidden;
 }
 
@@ -79,6 +84,7 @@
     .project {
         flex: 1 1 calc(50% - 15px);
         max-width: calc(50% - 15px);
+        aspect-ratio: 3/4;
     }
 
     .project:hover{
@@ -91,6 +97,5 @@
     .project {
         flex: 1 1 calc(100% / 4 - 15px);
         max-width: calc(100% / 4 - 15px);
-        height: 454px;
     }
 }

@@ -5,7 +5,7 @@ import './projects.css'
 
 function Projects() {
     return (
-        <div className="main-conteiner" id='portfolio'>
+        <div className="main-conteiner portfolio" id='portfolio'>
             <h2>Portfolio</h2>
             <div className='projects'>
                 {projectsArr.map((project, index) => (
