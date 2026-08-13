@@ -29,7 +29,7 @@ function Content () {
                     often finding solutions or opportunities that aren’t immediately obvious.
                 </p>
             </div>
-            <div className='main-conteiner' id='my-scills'>
+            <div className='main-conteiner' id='my-skills'>
                 <h2>My scills</h2>
                 <div className='main-grid'>
                     {scillsArr.map((item, index)=> (

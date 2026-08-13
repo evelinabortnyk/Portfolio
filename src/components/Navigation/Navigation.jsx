@@ -11,7 +11,7 @@ function Navigation() {
 
     const naviArr = [
         {'value': 'About me', 'link' : 'about-me',},
-        {'value': 'My scills', 'link' : 'my-skills',},
+        {'value': 'My skills', 'link' : 'my-skills',},
         {'value': 'Portfolio', 'link' : 'portfolio',},
         {'value': 'Contacts', 'link' : 'contacts',},
     ]
