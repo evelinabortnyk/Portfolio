@@ -8,7 +8,6 @@ function Content () {
     const skillsArr= ['HTML', 'CSS', 'Java Script', 'React', 'TypeScript', 'Vue', 'Node', 'AJAX', 'Git']
     return (
         <>
-        {/* <Navigation /> */}
         <Header />
         <main>
             <div className="main-conteiner about-me" id='about-me'>
