@@ -47,19 +47,19 @@
 }
 
 .project--title{
-    /* position: absolute; */
     bottom: 0;
     left: 0;
     width: 100%;
+    font-size: 1.2rem;
 }
 
 .info--tags{
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
     gap: 10px;
 
-    /* height: 56px; */
+
+    height: 110px;
     overflow: hidden;
 }
 
