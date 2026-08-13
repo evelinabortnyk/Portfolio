@@ -5,7 +5,7 @@ import Footer from '../Footer/Footer'
 import Navigation from '../Navigation/Navigation'
 
 function Content () {
-    const scillsArr= ['HTML', 'CSS', 'Java Script', 'React', 'TypeScript', 'Vue', 'Node', 'AJAX', 'Git']
+    const skillsArr= ['HTML', 'CSS', 'Java Script', 'React', 'TypeScript', 'Vue', 'Node', 'AJAX', 'Git']
     return (
         <>
         {/* <Navigation /> */}
@@ -30,10 +30,10 @@ function Content () {
                 </p>
             </div>
             <div className='main-conteiner' id='my-skills'>
-                <h2>My scills</h2>
+                <h2>My skills</h2>
                 <div className='main-grid'>
-                    {scillsArr.map((item, index)=> (
-                        <div className='grid-element scill' key={index}>{item}</div>
+                    {skillsArr.map((item, index)=> (
+                        <div className='grid-element skill' key={index}>{item}</div>
                     ))}
                 </div>
             </div>
