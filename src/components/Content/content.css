@@ -1,6 +1,6 @@
 main{
     color: var(--bordo);
-    background-color: var(--beige);
+    background-color: var(--creme);
     min-height: 100vh;
 }
 
@@ -46,11 +46,6 @@ main{
     height: 50px;
     padding: 10px;
 
-    background-color: var(--bordo);
-    color: var(--beige);
-    text-shadow: none;
-
-    border: 1px solid var(--beige);
     border-radius: 25px;
 }
 
@@ -61,6 +56,6 @@ main{
     }
     .skill:hover{
         transform: translateY(-8px);
-        box-shadow: 0px 0px 10px var(--bordo);
+        box-shadow: 0px 0px 10px var(--bprdo);
     }
 }

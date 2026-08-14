@@ -32,7 +32,7 @@ function Content () {
                 <h2>My skills</h2>
                 <div className='main-grid'>
                     {skillsArr.map((item, index)=> (
-                        <div className='grid-element skill' key={index}>{item}</div>
+                        <div className='grid-element skill tag' key={index}>{item}</div>
                     ))}
                 </div>
             </div>
