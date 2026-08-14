@@ -38,14 +38,18 @@ function Project() {
                         ))}
                     </div>
                     <p>{project.description}</p>
-                    <div className="head--buttons-wrap">
-                        <a href={project.linkShow} className="head-link" target='_blank'>
-                            <img src={gitIcon} alt="git-icon" />
-                            <p>Live Demo</p>
+                    <div className="buttons-wrap buttons-wrap--head">
+                        <a href={project.linkShow}  target='_blank' className='btn-wrap'>
+                            <button className="project--btn">
+                                <img src={gitIcon} alt="git-icon" />
+                                <p>Live Demo</p>
+                            </button>
                         </a>
-                        <a href={project.linkCode} className="head-link" target='_blank'>
-                            <img src={codeIcon} alt="code-icon" />
-                            <p>View Code</p>
+                        <a href={project.linkCode} className='btn-wrap' target='_blank'>
+                            <button className="project--btn" >
+                                <img src={codeIcon} alt="code-icon" />
+                                <p>View Code</p>
+                            </button>
                         </a>
                     </div>
                 </div>
@@ -57,7 +61,7 @@ function Project() {
                         <p className='title'>Technologies:</p>
                         <div className='technologies-tags'>
                             {project.tags.map((tag, index) => (
-                                <div key={index} className='technologies-tag'>{tag}</div>
+                                <div key={index} className='technologies-tag tag'>{tag}</div>
                             ))}
                         </div>
                     </div>
@@ -78,14 +82,18 @@ function Project() {
                     <p className="title">project gallery</p>
                     < Gallery data={project.gallery.join(' ')}/>
                 </div>
-                <div className="project-block head--buttons-wrap buttons-wrap-footer">
-                    <a href={project.linkShow} className="head-link" target='_blank'>
-                        <img src={gitIcon} alt="git-icon" />
-                        <p>Live Demo</p>
+                <div className="project-block buttons-wrap buttons-wrap--footer">
+                    <a href={project.linkShow} target='_blank' className='btn-wrap'>
+                        <button className="project--btn">
+                            <img src={gitIcon} alt="git-icon" />
+                            <p>Live Demo</p>
+                        </button>
                     </a>
-                    <a href={project.linkCode} className="head-link" target='_blank'>
-                        <img src={codeIcon} alt="code-icon" />
-                        <p>View Code</p>
+                    <a href={project.linkCode} target='_blank' className='btn-wrap'>
+                        <button className="project--btn">
+                            <img src={codeIcon} alt="code-icon" />
+                            <p>View Code</p>
+                        </button>
                     </a>
                 </div>
             </div>
