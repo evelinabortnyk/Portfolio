@@ -2,7 +2,6 @@ import './content.css'
 import Projects from '../Projects/Projects'
 import Header from '../Header/Header'
 import Footer from '../Footer/Footer'
-import Navigation from '../Navigation/Navigation'
 
 function Content () {
     const skillsArr= ['HTML', 'CSS', 'Java Script', 'React', 'TypeScript', 'Vue', 'Node', 'AJAX', 'Git']
