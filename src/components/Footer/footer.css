@@ -11,16 +11,16 @@ footer{
 }
 
 footer >h2{
-    color: var(--beige);
+    color: var(--creme);
 }
 
 footer >h2::before {
     background-color: var(--bordo);
-    color: var(--beige);
+    color: var(--sand);
 }
 
 footer >h2::after{
-    background-color: var(--beige);
+    background-color: var(--sand);
 }
 
 .footer-content{
