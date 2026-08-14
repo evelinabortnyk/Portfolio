@@ -38,6 +38,7 @@ footer >h2::after{
     align-items: center;
     justify-content: center;
     padding: 10px 15px;
+    color: var(--creme);
 }
 
 .footer-icon{
