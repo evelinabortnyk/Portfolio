@@ -68,7 +68,7 @@ li {
     left: 50%;
     margin-left: -10px;
     
-    background: #fff;
+    background: var(--creme);
     transition: 0.3s;
 }
 
@@ -104,7 +104,7 @@ li {
     padding: 20px 0;
     top: -300px;
 
-    background-color: rgba(26, 26, 26, 0.2);
+    background-color: rgba(77, 14, 19, 0.2);
     transition: all 0.3s;
 }
 
@@ -124,7 +124,7 @@ li {
     display: block;
 
     padding: 10px 0;
-    color: #fff;
+    color: var(--creme);
     text-decoration: none;
     text-shadow: 2px -1px 22px rgba(1, 1, 1, 0.92);
     transition: border 0.3s ease 0.3s;
@@ -139,9 +139,11 @@ li {
     .header-navigation {
         z-index: 3;
     }
+    
     .menu-btn{
         display: none;
     }
+
     .menu{
         position: relative;
         display: flex;
@@ -153,12 +155,14 @@ li {
         padding-right: 10px;
         z-index: 9999;
     }
+
     .burger-menu {
         position: relative;
         top: 0px;
         padding: 0;
         background-color: rgba(26, 26, 26, 0);
     }
+
     .menu-list{
         display: flex;
         flex-direction: row;
@@ -168,6 +172,7 @@ li {
     .menu-list>li{
         margin: 0 20px;
     }
+
     .menu-list>li{
         display: block;
         position: relative;
@@ -180,13 +185,13 @@ li {
         bottom: -4px;
         width: 0;
         height: 2px;
-        background-color: #fff;
+        background-color: var(--creme);
         transition: all 0.3s ease;
         transform: translateX(-50%);
     }
+
     .menu-list>li:hover::after {
         width: 100px;
     }
-    
 }
 
