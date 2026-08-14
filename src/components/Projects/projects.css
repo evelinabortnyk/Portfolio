@@ -2,6 +2,10 @@
     padding: 0;
 }
 
+.portfolio > h2::after{
+    width: 100%;
+    left: 0;
+}
 .projects {
     position: relative;
     display: flex;
@@ -24,9 +28,8 @@
     flex-direction: column;
     justify-content: start;
     width: 100%;
-    border: 1px solid var(--bordo);
-    background-color: var(--bordo);
-    color: #fff;
+    border: 2px solid var(--pink);
+    color: var(--bordo);
     border-radius: 10px;
     overflow: hidden;
     cursor: pointer;
@@ -63,20 +66,9 @@
     overflow: hidden;
 }
 
-.info--features{
-    padding: 20px;
+.info--tag{
+  height: 36px;
 }
-
-.tag{
-    padding: 5px 10px;
-
-    height: 36px;
-    color: var(--bordo);
-    background-color:#fff ;
-    border-radius: calc(46px / 2);
-}
-
-
 
 @media ( min-width: 768px) {
     .projects {
@@ -92,7 +84,7 @@
 
     .project:hover{
         transform: translateY(-8px);
-        box-shadow: 0px 0px 10px var(--bordo);
+        box-shadow: 0px 0px 10px var(--black);
     }
 }
 

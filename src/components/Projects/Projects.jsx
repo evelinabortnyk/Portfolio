@@ -5,7 +5,6 @@ import './projects.css'
 
 function Projects() {
 
-
     return (
         <div className="main-conteiner portfolio" id='portfolio'>
             <h2>Portfolio</h2>
@@ -19,7 +18,7 @@ function Projects() {
 
                         <div className="info--tags">
                             {project.tags.slice(0, 3).map((tag, tagIndex) => (
-                                <div key={tagIndex} className="tag">{tag} </div>
+                                <div key={tagIndex} className="info--tag tag">{tag} </div>
                             ))}
                         </div>
                         
