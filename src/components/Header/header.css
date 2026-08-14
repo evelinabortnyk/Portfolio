@@ -1,5 +1,5 @@
 header{
-    color: #fff;
+    color: var(--creme);
     height: 100vh;
     max-height: 100vh;
 }
@@ -35,20 +35,24 @@ h1{
     height: 100%;
     top: 0;
     left: 0;
-    background: #000000;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 27%, rgba(0, 0, 0, 1) 88%);
+    background: linear-gradient(180deg, var(--sand) 0%, var(--bordo) 70%);
     opacity: 0.4;
     z-index: 1;
 }
 
-.header-btn{
-    margin-top: 20px;
+.header-background > p{
+    display: block;
+    color: var(--bordo);
+    background-color: var(--pink);
+    padding: 0 5px;
+    margin-bottom: 20px;
 }
+
+
 
 .header-background * {
     position: relative;
     z-index: 3;
-    text-shadow: 0px 0px 15px #000;
 }
 
 @media (min-width: 768px) {
@@ -60,8 +64,5 @@ h1{
     .header-background{
         top: -160px
     }
-    .header-btn:hover{
-        -webkit-box-shadow: 0px 0px 12px 5px  var(--beige); 
-        box-shadow: 0px 0px 12px 5px var(--beige);
-    }
+    
 }
