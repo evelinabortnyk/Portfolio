@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <g fill="none" stroke="#4d0e13" stroke-width="32" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Квадратна основа -->
+    <path d="M280,120H152c-22.1,0-40,17.9-40,40v200c0,22.1,17.9,40,40,40h200c22.1,0,40-17.9,40-40V232" />
+    
+    <!-- Діагональна стрілка з центра за межі квадрата -->
+    <line x1="216" y1="296" x2="432" y2="80" />
+    <polyline points="336,80 432,80 432,176" />
+  </g>
+</svg>

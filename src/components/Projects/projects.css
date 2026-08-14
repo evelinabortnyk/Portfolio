@@ -50,10 +50,21 @@
 }
 
 .project--title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     bottom: 0;
     left: 0;
     width: 100%;
     font-size: 1.2rem;
+}
+
+.title-icon{
+    position: relative;
+    width: 24px;
+    height: 24px;
+    bottom: -2px;
+    left: 5px;
 }
 
 .info--tags{
@@ -84,7 +95,7 @@
 
     .project:hover{
         transform: translateY(-8px);
-        box-shadow: 0px 0px 10px var(--black);
+        box-shadow: 0px 0px 10px var(--bordo);
     }
 }
 
