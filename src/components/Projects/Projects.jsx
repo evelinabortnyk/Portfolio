@@ -11,10 +11,8 @@ function Projects() {
             <h2>Portfolio</h2>
             <div className='projects'>
                 {projectsArr.map((project, index) => (
-                    <Link to={`${project.link}`} key={index} className="project">
-                        {/* <div className="project--img" > */}
+                    <Link to={`${project.link}`} onClick={()=> window.scrollTo(0, 0)} key={index} className="project">
                         <img className="project--img" src={project.img} alt={project.title} />
-                        {/* </div> */}
                         <div className="project--title">
                             <h3>{project.title}</h3>
                             <img src={openIcon} alt="open link" className="title-icon"/>
@@ -25,12 +23,6 @@ function Projects() {
                                 <div key={tagIndex} className="info--tag tag">{tag} </div>
                             ))}
                         </div>
-                        
-                        {/* <div className="info--features">
-                            {project.features.map((feature, featureIndex) => (
-                                <div key={featureIndex} className="feature">{feature} </div>
-                            ))}
-                        </div>     */}
                     </Link>
                 ))}
             </div>

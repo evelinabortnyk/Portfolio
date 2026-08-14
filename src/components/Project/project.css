@@ -35,6 +35,7 @@
 
 .back-btn  >p {
     display: none;
+    color: var(--creme);
 }
 
 .project-wrap{
