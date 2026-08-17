@@ -32,7 +32,7 @@ export const projectsArr =[
     {
         'img': './img/screen/converter-screen.png',
         'preview': './img/preview/converter-preview.png',
-        'gallery' :['./img/gallery/converter_1.png', './img/gallery/converter_2.png',],
+        'gallery' :['./img/gallery/converter_1.png', './img/gallery/converter_2.png','./img/gallery/converter_3.png',],
         'title': 'Converter',
         'link': 'converter',
         'description': 'A React-based currency converter that retrieves live exchange rates from the Frankfurter API. The application allows users to convert currencies, swap selected currencies instantly, and keep a history of previous conversions with the conversion date.',
