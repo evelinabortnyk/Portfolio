@@ -7,7 +7,6 @@
     left: 0;
 }
 .projects {
-    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -23,7 +22,6 @@
 }
 
 .project{
-    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -99,8 +97,48 @@
 }
 
 @media ( min-width: 1280px) {
+    .portfolio{
+        position: relative;
+        padding: 0 40px;
+    }
+    .projects{
+        position: relative;
+        overflow: hidden;
+        flex-wrap: nowrap;
+        justify-content: start;
+    }
+
     .project {
-        flex: 1 1 calc(100% / 4 - 15px);
-        max-width: calc(100% / 4 - 15px);
+        position: relative;
+        flex: 0 0 calc(100% / 2 - 15px);
+        max-width: calc(100% / 2 - 15px);
+    }
+
+    .projects-btn{
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 30px;
+        width: 30px;
+        top: 60%;
+        background-color: var(--bordo);
+    }
+
+    .projects-btn> img{
+        width: 24px;
+        height: 24px;
+    }
+
+    .next-btn{
+        right: 10px;
+    }   
+
+    .enter-btn{
+        left: 10px;
+    }
+
+    .next-btn> img{
+        transform: rotate(180deg);
     }
 }

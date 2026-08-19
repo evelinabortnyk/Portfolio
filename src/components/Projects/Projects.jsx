@@ -3,15 +3,36 @@ import { Link } from "react-router-dom"
 
 import './projects.css'
 import openIcon from './img/open.svg'
+import { useState } from "react"
+
+import arrowICon from './img/arrow.svg'
 
 function Projects() {
+    const [rightInterval, setRightInterval] = useState(0)
+
+    const NUMBERS ={
+        cardWidth: 50,
+        schowCards : 2,
+    }
+
+
+    function projectsScroll (action) {
+        let arrLenght = projectsArr.length - NUMBERS.schowCards;
+        if(action === 'next'){
+            let interval = rightInterval + NUMBERS.cardWidth;
+            setRightInterval(interval <= (NUMBERS.cardWidth )* arrLenght ?  rightInterval + NUMBERS.cardWidth : 0)
+        } else if(action=== 'enter'){
+            let interval = rightInterval - NUMBERS.cardWidth
+            setRightInterval(interval >= 0 ? interval : (NUMBERS.cardWidth )* arrLenght)
+        }
+    }
 
     return (
         <div className="main-conteiner portfolio" id='portfolio'>
             <h2>Portfolio</h2>
             <div className='projects'>
                 {projectsArr.map((project, index) => (
-                    <Link to={`${project.link}`} onClick={()=> window.scrollTo(0, 0)} key={index} className="project">
+                    <Link to={`${project.link}`}  style={{right: `${rightInterval}%`}} onClick={()=> window.scrollTo(0, 0)} key={index} className="project">
                         <img className="project--img" src={project.img} alt={project.title} />
                         <div className="project--title">
                             <h3>{project.title}</h3>
@@ -25,7 +46,10 @@ function Projects() {
                         </div>
                     </Link>
                 ))}
+            
             </div>
+            <button className="projects-btn next-btn" onClick={()=> projectsScroll('next')}><img src={arrowICon} alt="arrov-next"/></button>
+            <button className="projects-btn enter-btn" onClick={()=> projectsScroll('enter')}><img src={arrowICon} alt="arrov-enter"/></button>
         </div>
     )
 }
