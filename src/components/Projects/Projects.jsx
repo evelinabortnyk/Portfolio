@@ -32,7 +32,7 @@ function Projects() {
             <h2>Portfolio</h2>
             <div className='projects'>
                 {projectsArr.map((project, index) => (
-                    <Link to={`${project.link}`}  style={{right: `${rightInterval}%`}} onClick={()=> window.scrollTo(0, 0)} key={index} className="project">
+                    <Link to={`${project.link}`}  style={{right: `${rightInterval}%`}} key={index} className="project">
                         <img className="project--img" src={project.img} alt={project.title} />
                         <div className="project--title">
                             <h3>{project.title}</h3>
