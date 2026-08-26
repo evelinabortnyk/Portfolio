@@ -1,5 +1,6 @@
 import './project.css'
-import { useParams, Link } from 'react-router-dom'
+import { useParams, useNavigate } from 'react-router-dom'
+import { useEffect } from 'react';
 import { projectsArr } from '../Projects/data';
 import Logo from '../Header/img/logo.png'
 import BackIcon from './img/back.svg'
@@ -14,6 +15,11 @@ import Gallery from './gallery/Gallery';
 function Project() {
     const { link } = useParams();
 
+    const navigate = useNavigate()
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
     const project = projectsArr.find(project => project.link === link)
 
     return (
@@ -21,10 +27,10 @@ function Project() {
             <div className='logo-container'>
                 <img src={Logo} alt="logo" className='logo' />
             </div>
-            <Link to="/" className='back-btn'>
+            <button onClick={() => navigate(-1)} className='back-btn'>
                 <img src={BackIcon} alt="back" />
                 <p>Back to portfolio</p>
-            </Link>
+            </button>
             <div className='project-wrap'>
                 <div className=' project-block block--head'>
                     <h3 className='head--name'>{project.title}</h3>
