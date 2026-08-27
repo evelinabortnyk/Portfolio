@@ -11,8 +11,8 @@ function Projects() {
     const [rightInterval, setRightInterval] = useState(0)
 
     const NUMBERS ={
-        cardWidth: 50,
-        schowCards : 2,
+        cardWidth: (100 / 3),
+        schowCards : 3,
     }
 
 
