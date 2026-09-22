@@ -14,7 +14,7 @@ function Footer (){
             <h2>Contacts</h2>
             <div className='footer-content'>
                 {contactsArr.map((item, index) => (
-                    <a key={index} href={item.link}><img src={item.src} className='footer-icon' alt="" />: {item.type}</a>
+                    <a key={index} href={item.link} target='_blank'><img src={item.src} className='footer-icon' alt="" />: {item.type}</a>
                 ))}
             </div>
         </footer>
