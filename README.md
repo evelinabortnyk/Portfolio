@@ -1,16 +1,82 @@
-# React + Vite
+# Personal Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive personal portfolio website built with React to showcase my projects, skills, and experience as a Frontend Developer.
 
-Currently, two official plugins are available:
+## Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+🔗 [View Portfolio](https://evelinabortnyk.github.io/Portfolio/#/)
 
-## React Compiler
+## About the Project
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+This portfolio website presents my frontend development projects and technical skills.
 
-## Expanding the ESLint configuration
+The website was designed and developed from scratch with a focus on responsive design, clean UI, reusable React components, and a smooth user experience.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Features
+
+* Responsive design for desktop, tablet, and mobile
+* Project showcase with live demos and GitHub repositories
+* About Me section
+* Skills and technologies section
+* Contact section
+* Smooth navigation
+* Interactive project elements
+* Optimized images and assets
+
+## Technologies
+
+* React
+* JavaScript
+* HTML5
+* CSS3
+* Vite
+* React Router
+* Git / GitHub
+* GitHub Pages
+
+## Getting Started
+
+### Installation
+
+```bash
+git clone https://github.com/evelinabortnyk/Portfolio
+cd Portfolio
+npm install
+```
+
+### Run Locally
+
+```bash
+npm run dev
+```
+
+The application will be available at the local development URL provided by Vite.
+
+## Build
+
+```bash
+npm run build
+```
+
+## Deployment
+
+The project is deployed using GitHub Pages.
+
+## What I Practiced
+
+* Building a React application from scratch
+* Creating reusable and maintainable components
+* Implementing responsive layouts
+* Working with React Router
+* Creating interactive UI elements
+* Managing project assets
+* Deploying a React application with GitHub Pages
+* Using Git and GitHub for version control
+
+## Author
+
+**Evelina Bortnyk**
+
+Frontend Developer
+
+[GitHub](https://github.com/evelinabortnyk)
