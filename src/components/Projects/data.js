@@ -45,8 +45,8 @@ export const projectsArr = [
             'Created a history of previous conversions',
             'Stored conversion records with timestamps',
         ],
-        'linkShow': 'https://convertor-hazel.vercel.app/',
-        'linkCode': 'https://github.com/evelinabortnyk/convertor_26',
+        'linkShow': 'https://currency-converter-xi-one-56.vercel.app/',
+        'linkCode': 'https://github.com/evelinabortnyk/Currency-Converter',
     },
     {
         'img': './img/screen/keksogram-screen.png',
@@ -66,7 +66,7 @@ export const projectsArr = [
             'Connected the frontend with a backend server',
         ],
         'linkShow': 'https://keksogram-red.vercel.app/',
-        'linkCode': 'https://github.com/evelinabortnyk/Keksogram-',
+        'linkCode': 'https://github.com/evelinabortnyk/Keksogram',
     },
     {
         'img': './img/screen/tattoo-screen.png',
@@ -84,8 +84,8 @@ export const projectsArr = [
             'Built a contact form',
             'Designed a user-friendly interface',
         ],
-        'linkShow': 'https://tatto-salon.vercel.app/',
-        'linkCode': 'https://github.com/evelinabortnyk/Tatto_salon',
+        'linkShow': 'https://tattoo-salon.vercel.app/',
+        'linkCode': 'https://github.com/evelinabortnyk/Tattoo_salon',
     },
     {
         'img': './img/screen/keksobooking-screen.png',
