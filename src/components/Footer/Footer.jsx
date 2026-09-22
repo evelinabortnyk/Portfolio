@@ -5,7 +5,7 @@ import githubIcon from './img/github.svg'
 
 function Footer (){
     const contactsArr = [
-        {'src': mailIcon, 'link': 'mailto:bortnykevelinaa@gmail.com', 'type': 'Email',},
+        {'src': mailIcon, 'link': 'https://mail.google.com/mail/?view=cm&fs=1&to=bortnykevelinaa@gmail.com', 'type': 'Email',},
         {'src': linkedinIcon, 'link': 'https://www.linkedin.com/in/evelina-bortnyk-81bb83416/', 'type': 'Linkedin',},
         {'src': githubIcon, 'link': 'https://github.com/evelinabortnyk', 'type': 'GitHub',},
     ]
